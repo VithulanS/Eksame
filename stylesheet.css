@@ -1,0 +1,1493 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Baggrundsindstillinger for hele siden */
+body {
+    height: 100%;
+    background-color: #2b3d4f;
+    /* Baggrundsfarve */
+    margin: 0px;
+    /* Mellemrum omkring siden */
+    padding: 0px;
+    /* Lidt plads på højre side */
+    
+}
+
+                                /*======================================================================
+                                                             FORSIDE
+                                ========================================================================*/
+/*======================================================================
+                               Overskrift
+========================================================================*/
+.Overskrift-Top {
+    text-align: center;
+    /* Centrer teksten */
+    color: #a39182;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    font-size: 50px;
+    position: relative;
+    /* Nødvendigt for at bruge ::after */
+}
+
+.Overskrift-Top::after {
+    content: "";
+    /* Pseudo-element til borderen */
+    display: block;
+    /* Gør elementet til en blok */
+    width: calc(100% - 40px);
+    /* Gør borderen 20px mindre på hver side */
+    height: 2px;
+    /* Højden af borderen */
+    background-color: #a39182;
+    /* Border-farve */
+    margin: 0 auto;
+    /* Centrer borderen */
+    position: absolute;
+    bottom: -10px;
+    /* Placerer den lige under teksten */
+    left: 20px;
+    /* For at sikre, det justerer sig rigtigt */
+}
+
+.Overskrift-Bund {
+    text-align: center;
+    /* Centrer teksten */
+    color: #a39182;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin: 0px;
+
+    font-size: 50px;
+    position: relative;
+    /* Nødvendigt for at bruge ::after */
+}
+
+.Overskrift-Bund ::after {
+    content: "";
+    /* Pseudo-element til borderen */
+    display: block;
+    /* Gør elementet til en blok */
+    width: calc(100% - 40px);
+    /* Gør borderen 20px mindre på hver side */
+    height: 2px;
+    /* Højden af borderen */
+    background-color: #a39182;
+    /* Border-farve */
+    margin: 0 auto;
+    /* Centrer borderen */
+    position: absolute;
+    bottom: -10px;
+    /* Placerer den lige under teksten */
+    left: 20px;
+    /* For at sikre, det justerer sig rigtigt */
+}
+
+/*======================================================================
+                        1 AfSNIT
+========================================================================*/
+
+.Overskrift-Forside-1 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: auto;
+    margin-left: 50px;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ .Billede-forside-1 {
+        max-width: 750px;
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0 auto;
+        border-radius: 30px;
+        margin-top: -100px; /* Juster margin-top for at give plads til tekst */
+        margin-bottom: 70px;
+        transition: width 0.5s ease;
+        transition: height 0.5s ease;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        position: relative;   
+    }
+    
+    .Brødtekst-Forside-1 {
+        float: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: auto;
+        margin-left: 50px;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+/*======================================================================
+                            2 AFSNIT
+========================================================================*/
+
+
+.Overskrift-Forside-2 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */
+    
+}
+
+.Brødtekst-Forside-2 {
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 67%;
+    margin-right:50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color:#516070;
+    position: relative;
+    z-index: 2; /* Sørger for, at teksten er foran billedet */
+}
+
+ 
+
+.Billede-forside-2 { max-width: 750px;
+    height: 300px;
+    width: 450px;
+    display: block; /* Sørger for, at billedet fungerer som et blok-element */
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: -100px; /* Juster margin-top for at give plads til tekst */
+    margin-bottom: 70px;
+    transition: width 0.5s ease;
+    transition: height 0.5s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    position: relative;}
+
+
+
+
+/*======================================================================
+                                3 AFSNIT
+========================================================================*/
+.Overskrift-Forside-3 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: auto;
+    margin-left: 50px;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ .Billede-forside-3 {
+        max-width: 750px;
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0 auto;
+        border-radius: 30px;
+        margin-top: -100px; /* Juster margin-top for at give plads til tekst */
+        margin-bottom: 70px;
+        transition: width 0.5s ease;
+        transition: height 0.5s ease;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        position: relative;   
+    }
+    
+    .Brødtekst-Forside-3 {
+        float: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: auto;
+        margin-left: 50px;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================================================
+                               ANIMATION
+========================================================================*/
+
+/*======================================================================
+                                Første afsnit
+========================================================================*/
+
+.Overskrift-animation-1 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-animation-1{
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -250px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-animation-1 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+/*======================================================================
+                            2 AFSNIT
+========================================================================*/
+
+
+.Overskrift-animation-2 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: auto;
+    margin-left: 50px;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+
+
+.Billede-animation-2 {
+        
+        height: 300px; /* Sørger for, at højden justeres dynamisk */
+        width: 450px;
+        display: block; /* Sørger for, at det fungerer som et blok-element */
+        margin: -100px 50px 0px auto; /* Placerer billedet til højre og justerer afstand */
+        border-radius: 30px; /* Runde hjørner */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); /* Tilføjer skygge */
+        float: right; /* Placerer billedet til højre */
+}   
+    
+.Brødtekst-Animation-2{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 67%;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: -200px;
+    padding: 5px;
+    background-color:#516070;
+    position: relative;
+    z-index: 2; /* Sørger for, at teksten er foran billedet */
+}
+
+
+
+
+
+/*======================================================================
+                                Tredje afsnit
+========================================================================*/
+
+.Overskrift-animation-3 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 75%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    margin-top: 70px;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-animation-3{
+        height: auto;
+        width: 300px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -230px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-animation-3 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 75%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================================================================
+                                VIDEO OG ESSENTIALS
+ ================================================================================================*/
+
+
+ .Overskrift-video-1 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-video-1{
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -230px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-video-1 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+/*======================================================================
+                            2 AFSNIT
+========================================================================*/
+
+
+.Overskrift-video-2 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: auto;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+
+
+.Billede-video-2 {
+        
+        height: 300px; /* Sørger for, at højden justeres dynamisk */
+        width: 450px;
+        display: block; /* Sørger for, at det fungerer som et blok-element */
+        margin: -100px 50px 70px auto; /* Placerer billedet til højre og justerer afstand */
+        border-radius: 30px; /* Runde hjørner */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); /* Tilføjer skygge */
+        float: right; /* Placerer billedet til højre */
+}   
+    
+.Brødtekst-video-2{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 67%;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: -270px;
+    padding: 5px;
+    background-color:#516070;
+    position: relative;
+    z-index: 2; /* Sørger for, at teksten er foran billedet */
+}
+
+
+
+
+
+/*======================================================================
+                                Tredje afsnit
+========================================================================*/
+
+.Overskrift-video-3 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 75%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-video-3{
+        height: auto;
+        width: 300px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -300px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-video-3 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 75%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+
+
+
+
+
+
+
+    /*===============================================================================================
+                                Produkt billede
+ ================================================================================================*/
+
+
+ .Overskrift-produkt-1 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-produkt-1{
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -250px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-produkt-1 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+/*======================================================================
+                            2 AFSNIT
+========================================================================*/
+
+
+.Overskrift-produkt-2 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: auto;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+
+
+.Billede-produkt-2 {
+        
+        height: 300px; /* Sørger for, at højden justeres dynamisk */
+        width: 450px;
+        display: block; /* Sørger for, at det fungerer som et blok-element */
+        margin: -250px 50px 70px auto; /* Placerer billedet til højre og justerer afstand */
+        border-radius: 30px; /* Runde hjørner */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); /* Tilføjer skygge */
+        float: right; /* Placerer billedet til højre */
+}   
+    
+.Brødtekst-produkt-2{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 67%;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: -0px;
+    padding: 5px;
+    background-color:#516070;
+    position: relative;
+    z-index: 2; /* Sørger for, at teksten er foran billedet */
+}
+
+
+
+
+
+/*======================================================================
+                                Tredje afsnit
+========================================================================*/
+
+.Overskrift-produkt-3 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-produkt-3{
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -250px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-produkt-3 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================================================
+                        Knap i vestre side
+========================================================================*/
+
+
+.back-button {
+    position: absolute;
+    /* Fast position i vinduet */
+    top: 10px;
+    /* 10px fra toppen */
+    left: 20px;
+    /* 10px fra venstre */
+
+}
+
+.back-button button {
+    background-color: #a39182;
+    /* Baggrundsfarve */
+    color: #2b3d4f;
+    /* Tekstfarve */
+    border: none;
+    /* Fjern kant */
+    padding: 10px 20px;
+    /* Indvendig afstand */
+    font-size: 16px;
+    /* Tekststørrelse */
+    border-radius: 5px;
+    /* Runde hjørner */
+    cursor: pointer;
+    /* Gør det tydeligt, at det er en knap */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    /* Let skygge */
+    transition: background-color 0.3s ease-out;
+    /* Glat overgang for hover-effekt */
+    transition: transform 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #2b3d4f;
+    /* Lys baggrund ved hover */
+    color: #a39182;
+    /* Mørk tekst ved hover */
+}
+
+
+
+
+/*======================================================================
+                                Billeder i Bunden
+========================================================================*/
+
+
+.image-grid {
+    display: grid;
+    /* Bruger et grid-layout til at placere elementer. */
+    grid-template-columns: repeat(3, 1fr);
+    /* Opretter 3 lige store kolonner. */
+    gap: 0px;
+    /* Giver 100 pixels mellemrum mellem elementer i gridet. */
+    margin-top: 50px;
+    /* Afsand fra teksten */
+    margin-bottom: 50px;
+    /* Tilføjer plads under gridet. */
+    margin-left: 75px;
+    /* Tilføjer plads til venstre for gridet. */
+   
+}
+
+/* Stil til hver billedcontainer */
+.image-container {
+    overflow: hidden;
+    /* Skjuler alt indhold uden for containerens grænser. */
+    position: relative;
+    /* Gør det muligt at placere indre elementer relativt. */
+    width: 100%;
+    /* Gør containeren 100% af dens overordnede element. */
+    max-width: 450px;
+    /* Begrænser bredden til maksimalt 350 pixels. */
+    margin: 0px;
+    /* Fjerner alt margin */
+    
+    /* Gør containeren til en inline-blok. */
+    margin-left: 50px;
+
+}
+
+/* Stil til billederne inde i containeren */
+.image-container img {
+    width: 450px;
+    height: 300px; /* Fast højde for billedet */
+    border-radius: 10px; /* Runde hjørner */
+    transition: transform 0.3s ease; /* Effekt ved hover */
+}
+
+/* Stil til teksten, der vises, når musen er over billedet */
+.image-container .hover-text {
+    position: absolute;
+    /* Placerer teksten i forhold til containeren. */
+    top: 40%;
+    /* Positionerer teksten midt på billedet. */
+    left: 50%;
+    /* Positionerer teksten midt på billedet. */
+    transform: translate(-50%, -50%);
+    /* Justerer for den nøjagtige centrering. */
+    color: white;
+    /* Gør teksten hvid. */
+    font-size: 16px;
+    /* Gør teksten 16 pixels stor. */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Giver teksten en halvgennemsigtig sort baggrund. */
+    padding: 200px 270px;
+    /* Giver ekstra plads omkring teksten. */
+    border-radius: 30px;
+    /* Gør hjørnerne på baggrunden runde. */
+    opacity: 0;
+    /* Gør teksten usynlig som standard. */
+    transition: opacity 0.3s ease;
+    /* Giver en blød overgang, når gennemsigtigheden ændres. */
+    text-align: center;
+    /* Centrerer teksten. */
+    
+}
+
+/* Effekt, når musen svæver over et billede */
+.image-container:hover img {
+    transform: scale(1.1);
+    /* Forstørrer billedet lidt, når musen er over det. */
+    border-radius: 30px;
+    /* Gør hjørnerne mere runde. */
+}
+
+/* Gør teksten synlig ved hover */
+.image-container:hover .hover-text {
+    opacity: 1;
+    /* Gør teksten synlig, når musen er over containeren. */
+    border-radius: 30px;
+    /* Gør hjørnerne på teksten runde. */
+}
+
+.image-container .text-box {
+    background-color: #516070;
+    /* Halvgennemsigtig sort baggrund */
+    color: #d1d5d9;
+    /* Hvid tekst */
+    font-size: 16px;
+    /* Skriftstørrelse */
+    padding: 10px;
+    /* Indvendig afstand */
+    border-radius: 0px;
+    /* Runde hjørner */
+    text-align: justify;
+    /* Centrerer teksten */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* Blød skygge */
+    margin-top: 10px;
+    /* Afstand over boksen */
+    margin-bottom: 0px;
+    gap: 0px;
+    opacity: 0;
+    /* Gør teksten usynlig som standard */
+    transform: translateY(-75px);
+    /* Flytter teksten lidt opad */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Effekt ved hover */
+}
+
+.image-container:hover .text-box {
+    opacity: 1;
+    /* Gør teksten synlig */
+    transform: translateY(0);
+    /* Returnerer teksten til sin oprindelige position */
+    height: auto;
+    /* Lader tekstboksen udfolde sig */
+}
+/*======================================================================
+                            FOOTER
+========================================================================*/
+
+
+/* Flexbox til at sikre at footeren er i bunden */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Hovedindholdet skal fylde resten af pladsen */
+main {
+    flex: 1;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #516070; /* Mørk baggrund */
+    color: #fff; /* Hvid tekst */
+    text-align: center;
+    padding: 20px 0; /* Juster padding */
+    font-size: 14px; /* Justér tekststørrelse */
+    width: 100%; /* Sørg for at footeren dækker hele bredden */
+    position: relative;
+    bottom: 0;
+}
+
+/* Footer container for centrering */
+.footer-container {
+    max-width: 1200px; /* Begræns bredden */
+    margin: 0 auto; /* Centrer indholdet */
+}
+
+
+    
+ 
+
+/*======================================================================
+                            Responsiv forside
+========================================================================*/
+
+
+/* Responsivitet - Medieforespørgsler */
+
+/* Responsiv for skærme mindre end 768px (mobiltelefoner) */
+
+    @media (max-width: 768px) {
+        .back-button {
+            width: auto;  /* Brug auto for at lade bredden være dynamisk */
+            top: 75px;    /* Lidt ned fra toppen */
+            left: 20px;   /* Juster til venstre */
+        }
+    
+        .back-button button {
+            width: 75px;          /* Ændrer bredden på knappen */
+            height: auto;          /* Ændrer højden på knappen */
+            font-size: 10px;       /* Ændrer tekststørrelsen */
+            padding: 10px 15px;    /* Ændrer polstringen */
+        }
+/*======================================================================
+                      FORSIDE
+========================================================================*/
+        .Overskrift-Forside-1 {
+            font-size: 30px;
+            width: 75%;
+            margin-bottom: 0px;
+            
+            
+           
+           
+           
+        }
+        
+        .Brødtekst-Forside-1 {
+            width: 75%;
+            font-size: 16px;
+            margin-bottom: 50px;
+            
+            
+           
+            
+        }
+    
+        .Billede-forside-1 {
+            max-width: 100%;
+            height: auto;
+            width: 75%; /* Gør billedet responsivt */
+            display: block;
+            margin-bottom: 50px;
+           
+        }
+    
+    
+    
+    
+        .Overskrift-Forside-2 {
+            font-size: 30px;
+            width: 75%;
+            
+            
+           
+           
+           
+        }
+        
+        .Brødtekst-Forside-2 {
+            width: 75%;
+            font-size: 16px;
+            margin-bottom: 50px;
+            
+            
+           
+            
+        }
+    
+        .Billede-forside-2{
+            max-width: 100%;
+            height: auto;
+            width: 75%; /* Gør billedet responsivt */
+            display: block;
+            margin-bottom: 50px;
+            
+        }
+
+        .Overskrift-Forside-3 {
+            font-size: 30px;
+            width: 75%;
+            margin-bottom: 0px;
+            margin-right: 75px;
+            
+           
+           
+           
+        }
+        
+        .Brødtekst-Forside-3 {
+            width: 75%;
+            font-size: 16px;
+            margin-bottom: 50px;
+           
+            
+           
+            
+        }
+    
+        .Billede-forside-3 {
+            max-width: 100%;
+            height: auto;
+            width: 75%; /* Gør billedet responsivt */
+            display: block;
+            margin-bottom: 50px;
+           
+        }
+     
+    
+       
+       
+   
+/*======================================================================
+                            ANIMATION
+========================================================================*/
+.Overskrift-animation-1 {
+    font-size: 30px;
+    width: 75%;
+    margin-bottom: 0px;
+    margin-left: 75px;
+    
+    
+   
+    
+   
+   
+   
+}
+
+.Brødtekst-animation-1 {
+    width: 75%;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-left: 75px;
+    float: none;
+    
+   
+    
+   
+    
+}
+
+.Billede-animation-1 {
+    max-width: 100%;
+    height: auto;
+    width: 75%; /* Gør billedet responsivt */
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+    
+
+
+
+
+    .Overskrift-animation-2 {
+        width: 75%; /* Gør det bredere på mindre skærme */
+        font-size: 24px; /* Mindre skrifttype */
+        margin-left: 75px;
+        float: none;
+    }
+
+    .Brødtekst-Animation-2 {
+        width: 75%; /* Tilpas bredden */
+        font-size: 14px; /* Mindre skrifttype */
+        margin-left: 75px;
+        margin-top: -655px; /* Centrerer teksten fuldstændigt */
+        float: none; /* Fjern float for responsivt layout */
+        margin-bottom: 50px;
+         
+    }
+
+    .Billede-animation-2 {
+        width: 75%; /* Gør billedet mere responsivt */
+        height: auto; /* Sørger for, at højden justeres automatisk */
+     
+        float: none; /* Fjern float for responsivt layout */
+        margin-top: 450px;
+        margin-left: 75px;
+        margin-bottom: 10px;
+    }
+
+
+.Overskrift-animation-3 {
+    width: 75%; /* Gør det bredere på mindre skærme */
+        font-size: 24px; /* Mindre skrifttype */
+        margin-left: 75px;
+        float: none;
+    
+   
+   
+   
+}
+
+.Brødtekst-animation-3 {
+    width: 75%; /* Tilpas bredden */
+    font-size: 14px; /* Mindre skrifttype */
+    margin-left: 75px;
+    margin-top: 0px; /* Centrerer teksten fuldstændigt */
+    float: none; /* Fjern float for responsivt layout */
+    
+   
+    
+}
+
+.Billede-animation-3 {
+    width: 75%; /* Gør billedet mere responsivt */
+    height: auto; /* Sørger for, at højden justeres automatisk */
+    float: none; /* Fjern float for responsivt layout */
+    margin-top: 50px;
+    margin-left: 75px;
+}
+/*=======================================================================================
+                            video essentials
+=============================================================================*/
+.Overskrift-video-1 {
+    font-size: 30px;
+    width: 75%;
+    margin-bottom: 0px;
+    margin-left: 75px;
+    
+    
+   
+    
+   
+   
+   
+}
+
+.Brødtekst-video-1 {
+    width: 75%;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-left: 75px;
+    float: none;
+    
+   
+    
+   
+    
+}
+
+.Billede-video-1 {
+    max-width: 100%;
+    height: auto;
+    width: 75%; /* Gør billedet responsivt */
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+    
+
+
+
+
+    .Overskrift-video-2 {
+        width: 75%; /* Gør det bredere på mindre skærme */
+        font-size: 24px; /* Mindre skrifttype */
+        margin-left: 75px;
+        float: none;
+    }
+
+    .Brødtekst-video-2 {
+        width: 75%; /* Tilpas bredden */
+        font-size: 14px; /* Mindre skrifttype */
+        margin-left: 75px;
+        margin-top: -505px; /* Centrerer teksten fuldstændigt */
+        float: none; /* Fjern float for responsivt layout */
+        margin-bottom: 50px;
+         
+    }
+
+    .Billede-video-2 {
+        width: 75%; /* Gør billedet mere responsivt */
+        height: auto; /* Sørger for, at højden justeres automatisk */
+     
+        float: none; /* Fjern float for responsivt layout */
+        margin-top: 250px;
+        margin-left: 75px;
+    }
+
+
+.Overskrift-video-3 {
+    width: 75%; /* Gør det bredere på mindre skærme */
+        font-size: 24px; /* Mindre skrifttype */
+        margin-left: 75px;
+        float: none;
+    
+   
+   
+   
+}
+
+.Brødtekst-video-3 {
+    width: 75%; /* Tilpas bredden */
+    font-size: 14px; /* Mindre skrifttype */
+    margin-left: 75px;
+    margin-top: 0px; /* Centrerer teksten fuldstændigt */
+    float: none; /* Fjern float for responsivt layout */
+    
+   
+    
+}
+
+.Billede-video-3 {
+    width: 75%; /* Gør billedet mere responsivt */
+    height: auto; /* Sørger for, at højden justeres automatisk */
+    float: none; /* Fjern float for responsivt layout */
+    margin-top: 50px;
+    margin-left: 75px;
+}
+
+/*=======================================================================================
+                           photo essentials
+=============================================================================*/
+.Overskrift-produkt-1 {
+    font-size: 30px;
+    width: 75%;
+    margin-bottom: 0px;
+    margin-left: 75px;
+    
+    
+   
+    
+   
+   
+   
+}
+
+.Brødtekst-produkt-1 {
+    width: 75%;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-left: 75px;
+    float: none;
+    
+   
+    
+   
+    
+}
+
+.Billede-produkt-1 {
+    max-width: 100%;
+    height: auto;
+    width: 75%; /* Gør billedet responsivt */
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+    
+
+
+
+
+    .Overskrift-produkt-2 {
+        width: 75%; /* Gør det bredere på mindre skærme */
+        font-size: 24px; /* Mindre skrifttype */
+        margin-left: 75px;
+        float: none;
+    }
+
+    .Brødtekst-produkt-2 {
+        width: 75%; /* Tilpas bredden */
+        font-size: 14px; /* Mindre skrifttype */
+        margin-left: 75px;
+        margin-top: -0px; /* Centrerer teksten fuldstændigt */
+        float: none; /* Fjern float for responsivt layout */
+        margin-bottom: 0px;
+         
+    }
+
+    .Billede-produkt-2 {
+        width: 75%; /* Gør billedet mere responsivt */
+        height: auto; /* Sørger for, at højden justeres automatisk */
+     
+        float: none; /* Fjern float for responsivt layout */
+        margin-top: 75px;
+        margin-left: 75px;
+    }
+
+
+.Overskrift-produkt-3 {
+    width: 75%; /* Gør det bredere på mindre skærme */
+        font-size: 24px; /* Mindre skrifttype */
+        margin-left: 75px;
+        float: none;
+    
+   
+   
+   
+}
+
+.Brødtekst-produkt-3 {
+    width: 75%; /* Tilpas bredden */
+    font-size: 14px; /* Mindre skrifttype */
+    margin-left: 75px;
+    margin-top: 0px; /* Centrerer teksten fuldstændigt */
+    float: none; /* Fjern float for responsivt layout */
+    
+   
+    
+}
+
+.Billede-produkt-3 {
+    width: 75%; /* Gør billedet mere responsivt */
+    height: auto; /* Sørger for, at højden justeres automatisk */
+    float: none; /* Fjern float for responsivt layout */
+    margin-top: 50px;
+    margin-left: 75px;
+}
+
+
+
+.image-grid{
+    margin-left:38px;
+    display: block;
+    width: 450px;
+    height: px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    gap:50px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left:-30px;
+    }
+    
+    
+}
