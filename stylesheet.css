@@ -784,6 +784,174 @@ body {
 
 
 
+    /*===============================================================================================
+                                re-design
+ ================================================================================================*/
+
+
+ .Overskrift-redesign-1 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-redesign-1{
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -250px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-redesign-1 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+/*======================================================================
+                            2 AFSNIT
+========================================================================*/
+
+
+.Overskrift-redesign-2 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: auto;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+
+
+.Billede-redesign-2 {
+        
+        height: 300px; /* Sørger for, at højden justeres dynamisk */
+        width: 450px;
+        display: block; /* Sørger for, at det fungerer som et blok-element */
+        margin: -250px 50px 70px auto; /* Placerer billedet til højre og justerer afstand */
+        border-radius: 30px; /* Runde hjørner */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); /* Tilføjer skygge */
+        float: right; /* Placerer billedet til højre */
+}   
+    
+.Brødtekst-redesign-2{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 67%;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: -0px;
+    padding: 5px;
+    background-color:#516070;
+    position: relative;
+    z-index: 2; /* Sørger for, at teksten er foran billedet */
+}
+
+
+
+
+
+/*======================================================================
+                                Tredje afsnit
+========================================================================*/
+
+.Overskrift-produkt-3 {
+    display: flex;
+    /* Aktiverer flexbox */
+    justify-content: flex-start;
+    /* Tekst står fra venstre */
+    align-items: center;
+    /* Justerer elementerne vertikalt (valgfrit) */
+    flex-direction: column;
+    /* Eksempel på højde */
+    width: 67%;
+    /* Baggrundens bredde */
+    /* Baggrundsfarve */
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 5px;
+    background-color: #d1d5d9a6;
+    font-size:40px;
+    /* Grå baggrundsfarve til headeren. */   
+}
+ 
+    .Billede-produkt-3{
+        height: 300px;
+        width: 450px;
+        display: block; /* Sørger for, at billedet fungerer som et blok-element */
+        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
+        border-radius: 30px;
+        margin-top: -250px; /* Juster margin-top for at give plads til tekst */
+        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        position: relative;
+        float: left; /* Placerer elementet til venstre */    
+}  
+    
+    
+    .Brødtekst-produkt-3 {
+        float: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 67%;
+        margin-right: 50px;
+        margin-left: auto;
+        padding: 5px;
+        background-color:#516070;
+        position: relative;
+        z-index: 2; /* Sørger for, at teksten er foran billedet */
+    }
+
+
+
+
+
 
 
 
