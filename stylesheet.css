@@ -1,22 +1,29 @@
 * {
+    
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* Baggrundsindstillinger for hele siden */
 body {
-    height: 100%;
+    
     background-color: #2b3d4f;
-    /* Baggrundsfarve */
-    margin: 0px;
+    /* Baggrundsfarve */ 
     /* Mellemrum omkring siden */
     padding: 0px;
     /* Lidt plads på højre side */
+    margin-left: 50px;
+    margin-right: 50px;
+    
     
 }
 
-                                /*======================================================================
-                                                             FORSIDE
-                                ========================================================================*/
+
+
+
+ /*======================================================================
+                              FORSIDE
+   ========================================================================*/
 /*======================================================================
                                Overskrift
 ========================================================================*/
@@ -784,6 +791,9 @@ body {
 
 
 
+    
+
+
     /*===============================================================================================
                                 re-design
  ================================================================================================*/
@@ -791,52 +801,60 @@ body {
 
  .Overskrift-redesign-1 {
     display: flex;
-    /* Aktiverer flexbox */
-    justify-content: flex-start;
-    /* Tekst står fra venstre */
-    align-items: center;
-    /* Justerer elementerne vertikalt (valgfrit) */
+    justify-content: flex-start; 
+    align-items: flex-start;
     flex-direction: column;
-    /* Eksempel på højde */
-    width: 67%;
-    /* Baggrundens bredde */
-    /* Baggrundsfarve */
-    margin-right: 50px;
-    margin-left: auto;
-    padding: 5px;
+    width: 100%;
+    padding: 10px;
     background-color: #d1d5d9a6;
-    font-size:40px;
-    /* Grå baggrundsfarve til headeren. */   
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    transition: 0.3s ease-in-out;
 }
- 
-    .Billede-redesign-1{
-        height: 300px;
-        width: 450px;
-        display: block; /* Sørger for, at billedet fungerer som et blok-element */
-        margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
-        border-radius: 30px;
-        margin-top: -250px; /* Juster margin-top for at give plads til tekst */
-        transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
-        
-        position: relative;
-        float: left; /* Placerer elementet til venstre */    
-}  
-    
-    
-    .Brødtekst-redesign-1 {
-        float: right;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 67%;
-        margin-right: 50px;
-        margin-left: auto;
-        padding: 5px;
-        background-color:#516070;
-        position: relative;
-        z-index: 2; /* Sørger for, at teksten er foran billedet */
-    }
 
+.Brødtekst-redesign-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: -30px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* To kolonner: auto til billedet, fleksibel plads til teksten */
+    gap: 1000px 20px 20px 20px; /* Plads mellem kolonnerne */
+    padding: 10px;
+    align-items: start; /* Justér begge elementer til toppen */
+}
+
+.Billede-redesign-1 {
+    width: 100%; /* Fyld kolonnens bredde */
+    max-width: 450px; /* Begræns bredden */
+    height: auto; /* Bevar proportionerne */
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin-top:0px;
+    transition: 0.3s ease-in-out;
+}
+
+.text-content {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
 
 /*======================================================================
                             2 AFSNIT
@@ -900,7 +918,7 @@ body {
                                 Tredje afsnit
 ========================================================================*/
 
-.Overskrift-produkt-3 {
+.Overskrift-redesign-3 {
     display: flex;
     /* Aktiverer flexbox */
     justify-content: flex-start;
@@ -909,9 +927,10 @@ body {
     /* Justerer elementerne vertikalt (valgfrit) */
     flex-direction: column;
     /* Eksempel på højde */
-    width: 67%;
+    width: 59%;
     /* Baggrundens bredde */
     /* Baggrundsfarve */
+    margin-top:50px;
     margin-right: 50px;
     margin-left: auto;
     padding: 5px;
@@ -920,26 +939,26 @@ body {
     /* Grå baggrundsfarve til headeren. */   
 }
  
-    .Billede-produkt-3{
-        height: 300px;
-        width: 450px;
+    .Billede-redesign-3{
+        height: 400px;
+        width: 600px;
         display: block; /* Sørger for, at billedet fungerer som et blok-element */
         margin: 0px 20px 70px 50px; /* Tilføj margin på højre side for afstand til andet indhold */
-        border-radius: 30px;
-        margin-top: -250px; /* Juster margin-top for at give plads til tekst */
+        
+        margin-top: -300px; /* Juster margin-top for at give plads til tekst */
         transition: width 0.5s ease, height 0.5s ease; /* Kombiner overgange */
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        
         position: relative;
         float: left; /* Placerer elementet til venstre */    
 }  
     
     
-    .Brødtekst-produkt-3 {
+    .Brødtekst-redesign-3 {
         float: right;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 67%;
+        width: 59%;
         margin-right: 50px;
         margin-left: auto;
         padding: 5px;
@@ -954,11 +973,7 @@ body {
 
 
 
-
-
-
-
-
+ 
 
 
 
@@ -1240,6 +1255,11 @@ main {
             height: auto;          /* Ændrer højden på knappen */
             font-size: 10px;       /* Ændrer tekststørrelsen */
             padding: 10px 15px;    /* Ændrer polstringen */
+        }
+       
+        .col {
+            flex: 1 1 100%; /* Skift til én kolonne på små skærme */
+            max-width: 100%;
         }
 /*======================================================================
                       FORSIDE
@@ -1643,19 +1663,95 @@ main {
     margin-left: 75px;
 }
 
+/*=======================================================================================
+                           Re-design
+=============================================================================*/
 
+
+.Overskrift-redesign-1, .Brødtekst-redesign-1 {
+    width: 100%; /* Gør elementerne 100% brede på mindre skærme */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.Overskrift-redesign-1 {
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+}
+
+  .container {
+        grid-template-columns: 1fr; /* Skift til en enkelt kolonne */
+    }
+
+    .Billede-redesign-1 {
+        margin: 0 auto; /* Centrer billedet */
+        order:2;
+    }
+
+    .text-content {
+        max-width: 100%; /* Lad teksten fylde hele bredden */
+    }
+
+
+    .Brødtekst-redesign-2 {
+        width: 75%; /* Tilpas bredden */
+        font-size: 14px; /* Mindre skrifttype */
+        margin-left: 75px;
+        margin-top: -0px; /* Centrerer teksten fuldstændigt */
+        float: none; /* Fjern float for responsivt layout */
+        margin-bottom: 0px;
+         
+    }
+
+    .Billede-redesign-2 {
+        width: 75%; /* Gør billedet mere responsivt */
+        height: auto; /* Sørger for, at højden justeres automatisk */
+        float: none; /* Fjern float for responsivt layout */
+        margin-top: 75px;
+        margin-left: 75px;
+    }
+
+
+.Overskrift-redesign-3 {
+    width: 75%; /* Gør det bredere på mindre skærme */
+        font-size: 24px; /* Mindre skrifttype */
+        margin-left: 75px;
+        float: none;
+    
+   
+   
+   
+}
+
+.Brødtekst-redesign-3 {
+    width: 75%; /* Tilpas bredden */
+    font-size: 14px; /* Mindre skrifttype */
+    margin-left: 75px;
+    margin-top: 0px; /* Centrerer teksten fuldstændigt */
+    float: none; /* Fjern float for responsivt layout */
+    
+   
+    
+}
+
+.Billede-redesign-3 {
+    width: 75%; /* Gør billedet mere responsivt */
+    height: auto; /* Sørger for, at højden justeres automatisk */
+    float: none; /* Fjern float for responsivt layout */
+    margin-top: 50px;
+    margin-left: 75px;
+}
 
 .image-grid{
     margin-left:38px;
     display: block;
     width: 450px;
-    height: px;
+    
     margin-top: 50px;
     margin-bottom: 30px;
-    gap:50px;
+    gap: 100px;
     grid-template-columns: repeat(1, 1fr);
     margin-left:-30px;
-    }
-    
-    
 }
+    
+    
+    }
