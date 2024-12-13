@@ -2,7 +2,6 @@
 
     padding: 0;
     box-sizing: border-box;
-    border:1px dotted white;
 }
 
 /* Baggrundsindstillinger for hele siden */
@@ -1812,9 +1811,9 @@ main {
     .back-button {
         width: auto;
         /* Brug auto for at lade bredden være dynamisk */
-        top: 10px;
+        top: 90px;
         /* Lidt ned fra toppen */
-        left: 10px;
+        left: 45px;
         /* Juster til venstre */
     }
 
