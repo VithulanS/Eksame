@@ -1,0 +1,2513 @@
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Baggrundsindstillinger for hele siden */
+body {
+
+    background-color: #2b3d4f;
+    /* Baggrundsfarve */
+    /* Mellemrum omkring siden */
+    padding: 0px;
+    /* Lidt plads på højre side */
+    margin-left: 25px;
+    margin-right: 25px;
+
+
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                      ALLE SIDE
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+
+.Overskrift-Top {
+    text-align: center;
+    /* Centrer teksten */
+    color: #a39182;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    font-size: 50px;
+    position: relative;
+    position: 50% 50%;
+    /* Nødvendigt for at bruge ::after */
+}
+
+.Overskrift-Top::after {
+    content: "";
+    /* Pseudo-element til borderen */
+    display: block;
+    /* Gør elementet til en blok */
+    width: calc(100% - 40px);
+    /* Gør borderen 20px mindre på hver side */
+    height: 2px;
+    /* Højden af borderen */
+    background-color: #a39182;
+    /* Border-farve */
+    margin: 0 auto;
+    /* Centrer borderen */
+    position: absolute;
+    bottom: -10px;
+    /* Placerer den lige under teksten */
+    left: 20px;
+    /* For at sikre, det justerer sig rigtigt */
+}
+
+.Overskrift-Bund {
+    text-align: center;
+    /* Centrer teksten */
+    color: #a39182;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin: 0px 0px 0px 0px;
+    font-size: 50px;
+    position: relative;
+    /* Nødvendigt for at bruge ::after */
+}
+
+.Overskrift-Bund ::after {
+    content: "";
+    /* Pseudo-element til borderen */
+    display: block;
+    /* Gør elementet til en blok */
+    width: calc(100% - 40px);
+    /* Gør borderen 20px mindre på hver side */
+    height: 2px;
+    /* Højden af borderen */
+    background-color: #a39182;
+    /* Border-farve */
+    position: 50% 50%;
+    margin: 0px 0px 0px 0px;
+}
+
+.container {
+    display: grid;
+    /* Brug grid-layout til opdeling */
+    grid-template-columns: auto 1fr;
+    /* Første kolonne auto, anden fleksibel */
+    gap: 20px;
+    /* Afstand mellem kolonner og rækker */
+    padding: 30px;
+    /* Indre afstand */
+    align-items: start;
+    /* Justér elementer til toppen */
+    
+    /* Træk containeren op */
+}
+.container-2 {
+    display: grid;
+    /* Brug grid-layout */
+    grid-template-columns: 1fr auto;
+    /* Første kolonne fleksibel, anden auto */
+    gap: 20px;
+    /* Afstand mellem elementer */
+    padding: 30px;
+    /* Indre afstand */
+    align-items: start;
+    /* Justér begge elementer til toppen */
+}
+.container-3 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Første kolonne auto, anden fleksibel */
+    gap: 20px;
+    padding: 30px;
+    align-items: start;
+    /* Justér elementer til toppen */
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                      FORSIDE
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/*======================================================================
+                            Første afsnit
+========================================================================*/
+
+.Overskrift-Forside-1 {
+    
+    display: flex;
+    /* Brug flexbox til layout */
+    justify-content: flex-start;
+    /* Justér indholdet til venstre */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    padding: 10px;
+    /* Indre afstand inde i elementet */
+    background-color: #d1d5d9a6;
+    /* Lys baggrundsfarve */
+    font-size: 40px;
+    /* Tekststørrelse */
+    margin: 5px 5px 0px 5px;
+    /* Skub overskriften til højre */
+    position: 50% 50%;
+    
+    /* Ingen margin til højre */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+   
+}
+
+.tekst-Forside-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    justify-content: flex-start;
+    /* Justér indholdet til toppen */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+   
+    padding: 15px;
+    /* Indre afstand */
+    background-color: #516070;
+    /* Mørk baggrundsfarve */
+    color: white;
+    /* Hvid tekstfarve */
+    position: relative;
+    /* Placering i forhold til forælder */
+    margin: 0px 5px 0px 5px;
+    /* Ingen margin til venstre */
+    /* Ingen margin til højre */
+   
+    /* Træk elementet tættere på forrige */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.Billede-Forside-1 {
+    width: 100%;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Gør hjørnerne runde */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Overgangseffekt på størrelse */
+    margin: -10px 5px 0px 5px;
+    /* Tilføj afstand mellem billede og tekst */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+
+/*======================================================================
+                            Andet afsnit
+========================================================================*/
+
+.Overskrift-Forside-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-Forside-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    /* Træk teksten op */
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-Forside-2 {
+    width: 100%;
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    transition: 0.3s ease-in-out;
+    margin: -10px 5px 0px 5px;
+
+    
+}
+
+
+
+/*======================================================================
+                            Tredje afsnit
+========================================================================*/
+
+.Overskrift-Forside-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    
+    
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-Forside-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-Forside-3 {
+    width: 450px;
+    /* bredde på gif */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Runde hjørner */
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Endnu større afstand foroven */
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       ANIMATION
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/*======================================================================
+                            Første afsnit
+========================================================================*/
+
+.Overskrift-animation-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    justify-content: flex-start;
+    /* Justér indholdet til venstre */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    padding: 10px;
+    /* Indre afstand inde i elementet */
+    background-color: #d1d5d9a6;
+    /* Lys baggrundsfarve */
+    font-size: 40px;
+    /* Tekststørrelse */
+    
+    margin: 5px 5px 0px 5px;
+   
+    /* Ingen margin til højre */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.tekst-animation-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    justify-content: flex-start;
+    /* Justér indholdet til toppen */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    width: 100%;
+    padding: 15px;
+    /* Indre afstand */
+    background-color: #516070;
+    /* Mørk baggrundsfarve */
+    color: white;
+    /* Hvid tekstfarve */
+    position: relative;
+    /* Placering i forhold til forælder */
+    margin: 0px 5px 0px 5px;
+    /* Træk elementet tættere på forrige */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.Billede-animation-1 {
+    width: 100%;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Gør hjørnerne runde */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Overgangseffekt på størrelse */
+    margin: -10px 5px 0px 5px;
+    /* Tilføj afstand mellem billede og tekst */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+
+/*======================================================================
+                            Andet afsnit
+========================================================================*/
+
+.Overskrift-animation-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-animation-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    /* Træk teksten op */
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-animation-2 {
+    width: 100%;
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: auto;
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Større afstand foroven */
+    transition: 0.3s ease-in-out;
+    order: 2;
+    /* Skift rækkefølge i containeren */
+}
+
+
+
+/*======================================================================
+                            Tredje afsnit
+========================================================================*/
+
+.Overskrift-animation-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-animation-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-animation-3 {
+    width: 300px;
+    /* bredde på gif */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: auto;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Runde hjørner */
+    transition: width 0.5s ease, height 0.5s ease;
+    margin:-10px 5px 0px 5px;
+    /* Endnu større afstand foroven */
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                        VIDEO ESSENTIALS
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/*======================================================================
+                            Første afsnit
+========================================================================*/
+
+.Overskrift-video-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    justify-content: flex-start;
+    /* Justér indholdet til venstre */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    padding: 10px;
+    /* Indre afstand inde i elementet */
+    background-color: #d1d5d9a6;
+    /* Lys baggrundsfarve */
+    font-size: 40px;
+     /* Tekststørrelse */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+    margin: 5px 5px 0px 5px;
+    /* placere element længere væk fra toppen */
+}
+
+.tekst-video-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    justify-content: flex-start;
+    /* Justér indholdet til toppen */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    
+    /* Centrer og tilføj afstand foroven */
+    padding: 15px;
+    /* Indre afstand */
+    background-color: #516070;
+    /* Mørk baggrundsfarve */
+    color: white;
+    /* Hvid tekstfarve */
+    position: relative;
+    /* Placering i forhold til forælder */
+    margin: 0px 5px 0px 5px;
+    /* Ingen margin til venstre */
+    
+    /* Ingen margin til højre */
+    
+    /* Træk elementet tættere på forrige */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.Billede-video-1 {
+    width: auto;
+    /* Fyld kolonnens bredde */
+    height: 350px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Gør hjørnerne runde */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Overgangseffekt på størrelse */
+    margin: -10px 5px 0px 5px;
+    /* Tilføj afstand mellem billede og tekst */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+
+
+
+/*======================================================================
+                            Andet afsnit
+========================================================================*/
+
+.Overskrift-video-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+ 
+}
+
+.tekst-video-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    
+    /* Træk teksten op */
+    transition: 0.3s ease-in-out;
+   
+}
+
+.Billede-video-2 {
+    width: 100%;
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 350px;
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Større afstand foroven */
+    transition: 0.3s ease-in-out;
+    order: 2;
+    /* Skift rækkefølge i containeren */
+    
+    /* placere element længere væk fra toppen */
+}
+
+
+
+/*======================================================================
+                            Tredje afsnit
+========================================================================*/
+
+.Overskrift-video-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+    margin: 5px 5px 0px 5px;
+    /* placere element længere væk fra toppen */
+}
+
+.tekst-video-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-video-3 {
+    width: 200px;
+    /* bredde på gif */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: auto;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Runde hjørner */
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Endnu større afstand foroven */
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                        PHOTO ESSENTIALS
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/*======================================================================
+                            Første afsnit
+========================================================================*/
+
+.Overskrift-photo-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    justify-content: flex-start;
+    /* Justér indholdet til venstre */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    padding: 10px;
+    /* Indre afstand inde i elementet */
+    background-color: #d1d5d9a6;
+    /* Lys baggrundsfarve */
+    font-size: 40px;
+     /* Tekststørrelse */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+    margin: 5px 5px 0px 5px;
+    
+}
+
+.tekst-photo-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    justify-content: flex-start;
+    /* Justér indholdet til toppen */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    margin: 20px auto;
+    /* Centrer og tilføj afstand foroven */
+    padding: 15px;
+    /* Indre afstand */
+    background-color: #516070;
+    /* Mørk baggrundsfarve */
+    color: white;
+    /* Hvid tekstfarve */
+    position: relative;
+    /* Placering i forhold til forælder */
+    margin: 0px 5px 0px 5px;
+    /* Træk elementet tættere på forrige */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.Billede-photo-1 {
+    width: 450px;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Gør hjørnerne runde */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Overgangseffekt på størrelse */
+    margin: -10px 5px 0px 5px;
+    /* Tilføj afstand mellem billede og tekst */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+
+
+
+/*======================================================================
+                            Andet afsnit
+========================================================================*/
+
+.Overskrift-photo-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+    
+    /* placere element længere væk fra toppen */
+ 
+}
+
+.tekst-photo-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    /* Træk teksten op */
+    transition: 0.3s ease-in-out;
+    
+   
+}
+
+.Billede-photo-2 {
+    width: 100%;
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin-top: 20px;
+    /* Større afstand foroven */
+    transition: 0.3s ease-in-out;
+    order: 2;
+    /* Skift rækkefølge i containeren */
+    margin: -10px 5px 0px 5px;
+    /* placere element længere væk fra toppen */
+}
+
+
+
+/*======================================================================
+                            Tredje afsnit
+========================================================================*/
+
+.Overskrift-photo-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+
+    /* placere element længere væk fra toppen */
+}
+
+.tekst-photo-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-photo-3 {
+    width: 450px;
+    /* bredde på gif */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Runde hjørner */
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Endnu større afstand foroven */
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                        Re-design
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-redesign-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    justify-content: flex-start;
+    /* Justér indholdet til venstre */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    padding: 10px;
+    /* Indre afstand inde i elementet */
+    background-color: #d1d5d9a6;
+    /* Lys baggrundsfarve */
+    font-size: 40px;
+    /* Tekststørrelse */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+    margin: 5px 5px 0px 5px;
+}
+
+.tekst-redesign-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    justify-content: flex-start;
+    /* Justér indholdet til toppen */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+
+    /* Centrer og tilføj afstand foroven */
+    padding: 15px;
+    /* Indre afstand */
+    background-color: #516070;
+    /* Mørk baggrundsfarve */
+    color: white;
+    /* Hvid tekstfarve */
+    position: relative;
+    /* Placering i forhold til forælder */
+    margin: 0px 5px 0px 5px;
+    /* Træk elementet tættere på forrige */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.Billede-redesign-1 {
+    width: 100%;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: auto;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Gør hjørnerne runde */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Overgangseffekt på størrelse */
+    margin: -10px 5px 0px 5px;
+    /* Tilføj afstand mellem billede og tekst */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.text-content {
+    padding: 15px;
+    /* Indre afstand */
+    border-radius: 10px;
+    /* Runde hjørner */
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Placer elementer i en kolonne */
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       2 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.Overskrift-redesign-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+    margin: 5px 5px 0px 5px;
+}
+
+.tekst-redesign-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    /* Træk teksten op */
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-redesign-2 {
+    width: 100%;
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: auto;
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Større afstand foroven */
+    transition: 0.3s ease-in-out;
+    order: 2;
+    /* Skift rækkefølge i containeren */
+}
+
+
+
+.text-content-2 {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       3 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.Overskrift-redesign-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-redesign-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-redesign-3 {
+    width: 100%;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Runde hjørner */
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Endnu større afstand foroven */
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                        IN-DESIGN
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-indesign-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    justify-content: flex-start;
+    /* Justér indholdet til venstre */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    padding: 10px;
+    /* Indre afstand inde i elementet */
+    background-color: #d1d5d9a6;
+    /* Lys baggrundsfarve */
+    font-size: 40px;
+    /* Tekststørrelse */
+    margin: 5px 5px 0px 5px;
+    /* Skub overskriften til højre */
+    
+    /* Ingen margin til højre */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+    
+    /* Større afstand foroven */
+}
+
+.tekst-indesign-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    justify-content: flex-start;
+    /* Justér indholdet til toppen */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    
+    /* Centrer og tilføj afstand foroven */
+    padding: 15px;
+    /* Indre afstand */
+    background-color: #516070;
+    /* Mørk baggrundsfarve */
+    color: white;
+    /* Hvid tekstfarve */
+    position: relative;
+    /* Placering i forhold til forælder */
+    margin-left: auto;
+    /* Ingen margin til venstre */
+    
+    margin: 0px 5px 0px 5px;
+    
+    /* Træk elementet tættere på forrige */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.Billede-indesign-1 {
+    width: 250px;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: auto;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Gør hjørnerne runde */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Overgangseffekt på størrelse */
+    margin: -10px 5px 0px 5px;
+    /* Tilføj afstand mellem billede og tekst */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+
+
+.text-content {
+    padding: 15px;
+    /* Indre afstand */
+    border-radius: 10px;
+    /* Runde hjørner */
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Placer elementer i en kolonne */
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       2 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.Overskrift-indesign-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-indesign-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    /* Træk teksten op */
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-indesign-2 {
+    width: 100%;
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Større afstand foroven */
+    transition: 0.3s ease-in-out;
+    order: 2;
+    /* Skift rækkefølge i containeren */
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       3 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.Overskrift-indesign-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-indesign-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-indesign-3 {
+    width: 100%;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Runde hjørner */
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Endnu større afstand foroven */
+    transition: 0.3s ease-in-out;
+}
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                        PROTOTYPING
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-prototyping-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    justify-content: flex-start;
+    /* Justér indholdet til venstre */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    padding: 10px;
+    /* Indre afstand inde i elementet */
+    background-color: #d1d5d9a6;
+    /* Lys baggrundsfarve */
+    font-size: 40px;
+    /* Tekststørrelse */
+    /* Ingen margin til højre */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+    margin: 5px 5px 0px 5px;
+    /* Større afstand foroven */
+}
+
+.tekst-prototyping-1 {
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Læg elementerne i en kolonne */
+    justify-content: flex-start;
+    /* Justér indholdet til toppen */
+    align-items: flex-start;
+    /* Justér indholdets lodrette position */
+    width: 100%;
+    /* Fylder 95% af containerens bredde */
+    margin: 20px auto;
+    /* Centrer og tilføj afstand foroven */
+    padding: 15px;
+    /* Indre afstand */
+    background-color: #516070;
+    /* Mørk baggrundsfarve */
+    color: white;
+    /* Hvid tekstfarve */
+    position: relative;
+    /* Placering i forhold til forælder */
+    margin: 0px 5px 0px 5px;
+    /* Træk elementet tættere på forrige */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+.Billede-prototyping-1 {
+    width: 450px;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Gør hjørnerne runde */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Overgangseffekt på størrelse */
+    margin: -10px 5px 0px 5px;
+    /* Tilføj afstand mellem billede og tekst */
+    transition: 0.3s ease-in-out;
+    /* Glidende overgang ved ændringer */
+}
+
+
+
+.text-content {
+    padding: 15px;
+    /* Indre afstand */
+    border-radius: 10px;
+    /* Runde hjørner */
+    display: flex;
+    /* Brug flexbox til layout */
+    flex-direction: column;
+    /* Placer elementer i en kolonne */
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       2 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.Overskrift-prototyping-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+    
+
+.tekst-prototyping-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    /* Træk teksten op */
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-prototyping-2 {
+    width: 100%;
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: 300px;
+    border-radius: 30px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin: -10px 5px 0px 5px;
+    /* Større afstand foroven */
+    transition: 0.3s ease-in-out;
+    order: 2;
+    /* Skift rækkefølge i containeren */
+}
+
+
+
+.text-content-2 {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       3 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.Overskrift-prototyping-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: #d1d5d9a6;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.tekst-prototyping-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #516070;
+    color: white;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.Billede-prototyping-3 {
+    width: 90%;
+    /* Fyld kolonnens bredde */
+    max-width: 450px;
+    /* Begræns billedets bredde */
+    height: auto;
+    /* Bevar billedets proportioner */
+    border-radius: 30px;
+    /* Runde hjørner */
+    transition: width 0.5s ease, height 0.5s ease;
+    /* Endnu større afstand foroven */
+    transition: 0.3s ease-in-out;
+    margin: -10px 5px 0px 5px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       KNAP
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.back-button {
+    position: absolute;
+    /* Fast position i vinduet */
+    top: 20px;
+    /* 10px fra toppen */
+    left: 45px;
+    /* 10px fra venstre */
+
+}
+
+.back-button button {
+    background-color: #a39182;
+    /* Baggrundsfarve */
+    color: #2b3d4f;
+    /* Tekstfarve */
+    border: none;
+    /* Fjern kant */
+    padding: 10px 20px;
+    /* Indvendig afstand */
+    font-size: 16px;
+    /* Tekststørrelse */
+    border-radius: 5px;
+    /* Runde hjørner */
+    cursor: pointer;
+    /* Gør det tydeligt, at det er en knap */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    /* Let skygge */
+    transition: background-color 0.3s ease-out;
+    /* Glat overgang for hover-effekt */
+    transition: transform 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #2b3d4f;
+    /* Lys baggrund ved hover */
+    color: #a39182;
+    /* Mørk tekst ved hover */
+}
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                      BILLEDE I BUNDEN
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+.image-grid {
+    display: grid;
+    /* Bruger et grid-layout til at placere elementer. */
+    grid-template-columns: repeat(3, 1fr);
+    /* Opretter 3 lige store kolonner. */
+    gap: 0px;
+    /* Giver 100 pixels mellemrum mellem elementer i gridet. */
+    /* Tilføjer plads under gridet. */
+   
+    /* Tilføjer plads til venstre for gridet. */
+   
+
+}
+
+/* Stil til hver billedcontainer */
+.image-container {
+    overflow: hidden;
+    /* Skjuler alt indhold uden for containerens grænser. */
+    position: relative;
+    /* Gør det muligt at placere indre elementer relativt. */
+    width: 100%;
+    /* Gør containeren 100% af dens overordnede element. */
+    max-width: 450px;
+    /* Begrænser bredden til maksimalt 450 pixels. */
+    margin: 0px auto;
+    
+    
+    
+
+}
+
+/* Stil til billederne inde i containeren */
+.image-container img {
+    width: 450px;
+    height: 300px;
+    /* Fast højde for billedet */
+    border-radius: 10px;
+    /* Runde hjørner */
+    transition: transform 0.3s ease;
+    /* Effekt ved hover */
+   
+   
+}
+
+/* Stil til teksten, der vises, når musen er over billedet */
+.image-container .hover-text {
+    position: absolute;
+    /* Placerer teksten i forhold til containeren. */
+    top: 40%;
+    /* Positionerer teksten midt på billedet. */
+    left: 50%;
+    /* Positionerer teksten midt på billedet. */
+    transform: translate(-50%, -50%);
+    /* Justerer for den nøjagtige centrering. */
+    color: white;
+    /* Gør teksten hvid. */
+    font-size: 16px;
+    /* Gør teksten 16 pixels stor. */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Giver teksten en halvgennemsigtig sort baggrund. */
+    padding: 200px 270px;
+    /* Giver ekstra plads omkring teksten. */
+    border-radius: 30px;
+    /* Gør hjørnerne på baggrunden runde. */
+    opacity: 0;
+    /* Gør teksten usynlig som standard. */
+    transition: opacity 0.3s ease;
+    /* Giver en blød overgang, når gennemsigtigheden ændres. */
+    text-align: center;
+    /* Centrerer teksten. */
+
+}
+
+/* Effekt, når musen svæver over et billede */
+.image-container:hover img {
+    transform: scale(1.1);
+    /* Forstørrer billedet lidt, når musen er over det. */
+    border-radius: 30px;
+    /* Gør hjørnerne mere runde. */
+}
+
+/* Gør teksten synlig ved hover */
+.image-container:hover .hover-text {
+    opacity: 1;
+    /* Gør teksten synlig, når musen er over containeren. */
+    border-radius: 30px;
+    /* Gør hjørnerne på teksten runde. */
+}
+
+.image-container .text-box {
+    background-color: #516070;
+    /* Halvgennemsigtig sort baggrund */
+    color: #d1d5d9;
+    /* Hvid tekst */
+    font-size: 16px;
+    /* Skriftstørrelse */
+    padding: 10px;
+    /* Indvendig afstand */
+    border-radius: 0px;
+    /* Runde hjørner */
+    text-align: justify;
+    /* Centrerer teksten */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* Blød skygge */
+    margin-top: 10px;
+    /* Afstand over boksen */
+    margin-bottom: 0px;
+    gap: 0px;
+    opacity: 0;
+    /* Gør teksten usynlig som standard */
+    transform: translateY(-75px);
+    /* Flytter teksten lidt opad */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Effekt ved hover */
+}
+
+.image-container:hover .text-box {
+    opacity: 1;
+    /* Gør teksten synlig */
+    transform: translateY(0);
+    /* Returnerer teksten til sin oprindelige position */
+    height: auto;
+    /* Lader tekstboksen udfolde sig */
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                      FOOTER
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+
+/* Flexbox til at sikre at footeren er i bunden */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Hovedindholdet skal fylde resten af pladsen */
+main {
+    flex: 1;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #516070;
+    /* Mørk baggrund */
+    color: #fff;
+    /* Hvid tekst */
+    text-align: center;
+    padding: 20px 0;
+    /* Juster padding */
+    font-size: 14px;
+    /* Justér tekststørrelse */
+    width: 100%;
+    /* Sørg for at footeren dækker hele bredden */
+    position: relative;
+    bottom: 0;
+}
+
+/* Footer container for centrering */
+.footer-container {
+    max-width: 1200px;
+    /* Begræns bredden */
+    margin: 0 auto;
+    /* Centrer indholdet */
+}
+
+
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                        RESPONSIVITET
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+/* Responsivitet - Medieforespørgsler */
+
+/* Responsiv for skærme mindre end 768px (mobiltelefoner) */
+
+@media (max-width: 768px) {
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       CONTAINER
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+    .container {
+        grid-template-columns: 1fr;
+        /* Skift til en enkelt kolonne */
+    } .container-3 {
+        grid-template-columns: 1fr;
+        /* Skift til en enkelt kolonne */
+    } .container-2 {
+        grid-template-columns: 1fr;
+        /* Skift til en enkelt kolonne */
+    }
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       KNAP
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+    .back-button button {
+        width: 75px;
+        /* Ændrer bredden på knappen */
+        height: auto;
+        /* Ændrer højden på knappen */
+        font-size: 10px;
+        /* Ændrer tekststørrelsen */
+        padding: 10px 15px;
+        /* Ændrer polstringen */
+    }
+
+    .back-button {
+        width: auto;
+        /* Brug auto for at lade bredden være dynamisk */
+        top: 90px;
+        /* Lidt ned fra toppen */
+        left: 45px;
+        /* Juster til venstre */
+    }
+
+ 
+
+
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       Forside
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+ 
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-Forside-1 {
+    width: 100%;
+    /* Gør elementerne 100% brede på mindre skærme */
+    margin: 5px 5px 0px 5px;
+}
+
+.Overskrift-Forside-1 {
+    font-size: 30px;
+    /* Mindre fontstørrelse på små skærme */
+    text-align: center;
+
+}
+
+.tekst-Forside-1 {
+    width: 100%;
+    /* Gør elementerne 100% brede på mindre skærme */
+    margin: 0px 5px 0px 5px;
+
+}
+
+
+.Billede-Forside-1 {
+    margin: -10px 5px 0px 5px;
+    /* Centrer billedet */
+    order: 2;
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   2 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+.tekst-Forside-2 {
+    width: 100%;
+    /* Gør elementerne 100% brede på mindre skærme */
+    margin: 0px 5px 0px 5px;
+}
+
+.Overskrift-Forside-2 {
+    width: 100%;
+    font-size: 30px;
+    /* Mindre fontstørrelse på små skærme */
+    text-align: center;
+    margin: 5px 5px 0px 5px;
+    
+
+}
+
+
+
+.Billede-Forside-2 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    /* Centrer billedet */
+    order: 2;
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   3 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+.Overskrift-Forside-3 {
+    width: 100%;
+    /* Gør elementerne 100% brede på mindre skærme */
+    
+}
+
+.Overskrift-Forside-3 {
+    font-size: 30px;
+    /* Mindre fontstørrelse på små skærme */
+    text-align: center;
+    margin: 5px 5px 0px 5px;
+
+}
+
+.tekst-Forside-3 {
+    width: 100%;
+    /* Gør elementerne 100% brede på mindre skærme */
+    margin: 0px 5px 0px 5px;
+
+}
+
+
+
+
+.Billede-Forside-3 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    
+    /* Centrer billedet */
+    order: 2;
+}
+
+
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       ANIMATION
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+ 
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-animation-1 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+}
+
+.Overskrift-animation-1 {
+    font-size: 30px;
+    /* Mindre fontstørrelse på små skærme */
+    text-align: center;
+
+}
+
+.tekst-animation-1 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+}
+
+
+.Billede-animation-1 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    /* Centrer billedet */
+    order: 2;
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   2 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+.tekst-animation-2 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+}
+
+.Overskrift-animation-2 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+    font-size: 30px;
+    /* Mindre fontstørrelse på små skærme */
+    text-align: center;
+    
+
+}
+
+
+
+.Billede-animation-2 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    /* Centrer billedet */
+    order: 2;
+}
+
+
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   3 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+.Overskrift-animation-3 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+}
+
+.Overskrift-animation-3 {
+    font-size: 30px;
+    /* Mindre fontstørrelse på små skærme */
+    text-align: center;
+
+}
+
+.tekst-animation-3 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+}
+
+
+
+
+.Billede-animation-3 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    /* Centrer billedet */
+    order: 2;
+}
+
+
+
+   
+
+   /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       VIDEO ESSENTIALS
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-video-1 {
+    font-size: 30px;
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+
+
+
+}
+
+.tekst-video-1 {
+    font-size: 16px;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+
+
+}
+
+.Billede-video-1 {
+    
+    height: auto;
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;
+    
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   2 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+.Overskrift-video-2 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;;
+
+
+
+
+}
+
+.tekst-video-2 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+}
+
+.Billede-video-2 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                  3 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-video-3 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+}
+
+.tekst-video-3 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+}
+
+.Billede-video-3 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;
+}
+
+   /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       PHOTO ESSENTIALS
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-photo-1 {
+    font-size: 30px;
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+
+
+
+}
+
+.tekst-photo-1 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+
+
+}
+
+.Billede-photo-1 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;
+    
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   2 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+.Overskrift-photo-2 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+}
+
+.tekst-photo-2 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+}
+
+.Billede-photo-2 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                  3 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-photo-3 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+}
+
+.tekst-photo-3 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+}
+
+.Billede-photo-3 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;
+}
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       REDESIGN
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+    .Overskrift-redesign-1 {
+        width: 100%;
+        margin: 5px 5px 0px 5px;
+    }
+
+    .Overskrift-redesign-1 {
+        font-size: 30px;
+        /* Mindre fontstørrelse på små skærme */
+        text-align: center;
+
+    }
+
+    .tekst-redesign-1 {
+        width: 100%;
+        margin: 0px 5px 0px 5px;
+
+    }
+
+   
+
+
+    .text-content {
+        max-width: 100%;
+        /* Lad teksten fylde hele bredden */
+    }
+
+    .Billede-redesign-1 {
+        width: 100%;
+        margin: -10px 5px 0px 5px;
+        order: 2;
+    }
+
+
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       2 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+    .tekst-redesign-2 {
+        width: 100%;
+        margin: 5px 5px 0px 5px;      
+    }
+
+    .Overskrift-redesign-2 {
+        font-size: 30px;
+        /* Mindre fontstørrelse på små skærme */
+        text-align: center;
+
+    }
+
+    .Billede-redesign-2 {
+        width: 100%;
+        margin: -10px 5px 0px 5px;
+
+    }
+
+   
+
+    .text-content-2 {
+        max-width: 100%;
+        /* Lad teksten fylde hele bredden */
+    }
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       3 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+    .Overskrift-redesign-3 {
+        width: 100%;
+        margin: 5px 5px 0px 5px;
+    }
+
+    .Overskrift-redesign-3 {
+        font-size: 30px;
+        /* Mindre fontstørrelse på små skærme */
+        text-align: center;
+
+    }
+
+    .tekst-redesign-3 {
+        width: 100%;
+        margin: 0px 5px 0px 5px;
+
+    }
+
+
+    .text-content-3 {
+        max-width: 100%;
+        /* Lad teksten fylde hele bredden */
+    }
+
+    .Billede-redesign-3 {
+        width: 100%;
+        margin: -10px 5px 0px 5px;
+        order: 2;
+    }
+
+ /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       INDSIGN
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-indesign-1 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+
+
+
+}
+
+.tekst-indesign-1 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+
+
+}
+
+.Billede-indesign-1 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   2 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+.Overskrift-indesign-2 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+}
+
+.tekst-indesign-2 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;/
+
+
+
+}
+
+.Billede-indesign-2 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                  3 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-indesign-3 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+}
+
+.tekst-indesign-3 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+}
+
+.Billede-indesign-3 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;
+}
+
+ /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                      PROTOTYPING
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+    /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                       1 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-prototyping-1 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+
+
+
+}
+
+.tekst-prototyping-1 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+
+
+}
+
+.Billede-prototyping-1 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                   2 AFSNIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+.Overskrift-prototyping-2 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+}
+
+.tekst-prototyping-2 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+}
+
+.Billede-prototyping-2 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+}
+
+/*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                  3 AFNSIT
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+.Overskrift-prototyping-3 {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+
+
+
+
+}
+
+.tekst-prototyping-3 {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+
+
+}
+
+.Billede-prototyping-3 {
+    width: 100%;
+    margin: -10px 5px 0px 5px;
+    order: 2;
+}
+
+
+
+
+    .image-grid {
+        display: block;
+        width: 450px;
+        width: 100%;
+        gap: 0px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+        
+    .image-container {
+        overflow: hidden;
+            /* Skjuler alt indhold uden for containerens grænser. */
+        position: relative;
+            /* Gør det muligt at placere indre elementer relativt. */
+         width: 100%;
+            /* Gør containeren 100% af dens overordnede element. */
+        max-width: 450px;
+            /* Begrænser bredden til maksimalt 350 pixels. */
+        margin: -50px 0px 0px 0px;
+        
+        }
+        
+    }
+
+
