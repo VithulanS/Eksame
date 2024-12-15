@@ -170,7 +170,8 @@ body {
     /* Justér indholdets lodrette position */
     width: 100%;
     /* Fylder 95% af containerens bredde */
-   
+    text-align: justify;
+    line-height: 1.5;
     padding: 15px;
     /* Indre afstand */
     background-color: #516070;
@@ -379,6 +380,8 @@ body {
     /* Træk elementet tættere på forrige */
     transition: 0.3s ease-in-out;
     /* Glidende overgang ved ændringer */
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .Billede-animation-1 {
@@ -431,6 +434,8 @@ body {
     margin: 0px 5px 0px 5px;
     /* Træk teksten op */
     transition: 0.3s ease-in-out;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .Billede-animation-2 {
@@ -568,6 +573,8 @@ body {
     /* Træk elementet tættere på forrige */
     transition: 0.3s ease-in-out;
     /* Glidende overgang ved ændringer */
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .Billede-video-1 {
@@ -623,6 +630,8 @@ body {
     
     /* Træk teksten op */
     transition: 0.3s ease-in-out;
+    text-align: justify;
+    line-height: 1.5;
    
 }
 
