@@ -65,6 +65,7 @@ body {
 .Overskrift-Bund::after {
     display: block; /* Gør pseudo-elementet til en blok */
     width: calc(100% - 40px); /* Gør borderen lidt mindre end 100% */
+    font-family: "Roboto", sans-serif; /* Vælger skrifttype */
     height: 2px; /* Sætter højden af borderen */
     background-color: #a39182; /* Sætter farven på borderen */
     position: 50% 50%; /* Indstiller positionen af borderen */
@@ -132,6 +133,8 @@ body {
     /* Runde hjørner på øverste højre */
     border-top-left-radius: 10px;
     /* Runde hjørner på øverste venstre */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-Forside-1 {
@@ -153,7 +156,8 @@ body {
     /* Indre afstand i tekstsektionen */
     background-color: #516070;
     /* Mørk baggrundsfarve */
-    color: white;
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif;
     /* Hvid tekstfarve */
     position: relative;
     /* Absolut positionering i forhold til forælderen */
@@ -165,6 +169,8 @@ body {
     /* Runde hjørner på nederste højre */
     border-bottom-left-radius: 10px;
     /* Runde hjørner på nederste venstre */
+    
+    
 }
 
 .Billede-Forside-1 {
@@ -209,6 +215,9 @@ body {
     /* Runde hjørner på øverste højre */
     border-top-left-radius: 10px;
     /* Runde hjørner på øverste venstre */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
+
 }
 
 .tekst-Forside-2 {
@@ -227,7 +236,8 @@ body {
     /* Indre afstand i tekstsektionen */
     background-color: #516070;
     /* Mørk baggrundsfarve */
-    color: white;
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif;
     /* Hvid tekstfarve */
     position: relative;
     margin: 0px 5px 0px 5px;
@@ -280,6 +290,8 @@ body {
     margin: 5px 5px 0px 5px;
     transition: 0.3s ease-in-out;
     /* Glidende overgang ved ændringer */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-Forside-3 {
@@ -298,7 +310,8 @@ body {
     /* Indre afstand i tekstsektionen */
     background-color: #516070;
     /* Mørk baggrundsfarve */
-    color: white;
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif;
     /* Hvid tekstfarve */
     position: relative;
     margin: 0px 5px 0px 5px;
@@ -351,6 +364,8 @@ body {
     /* Runde hjørner på øverste højre */
     border-top-left-radius: 10px;
     /* Runde hjørner på øverste venstre */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-animation-1 {
@@ -366,7 +381,8 @@ body {
     padding: 15px;
     background-color: #516070;
     /* Mørk baggrundsfarve */
-    color: white;
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif;
     /* Hvid tekstfarve */
     position: relative;
     margin: 0px 5px 0px 5px;
@@ -415,6 +431,8 @@ body {
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
     border-top-right-radius: 10px; /* Rundt hjørne på højre side */
     border-top-left-radius: 10px; /* Rundt hjørne på venstre side */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-animation-2 {
@@ -425,7 +443,8 @@ body {
     width: 100%; /* Fylder hele containerens bredde */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Position i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Margin omkring elementet */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -466,6 +485,8 @@ body {
     margin: 5px 5px 0px 5px; /* Margin omkring elementet */
     border-top-right-radius: 10px; /* Rundt hjørne på højre side */
     border-top-left-radius: 10px; /* Rundt hjørne på venstre side */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-video-1 {
@@ -476,7 +497,8 @@ body {
     width: 100%; /* Fylder 100% af containerens bredde */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Position i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Margin omkring elementet */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -512,6 +534,8 @@ body {
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
     border-top-right-radius: 10px; /* Rundt hjørne på højre side */
     border-top-left-radius: 10px; /* Rundt hjørne på venstre side */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-video-2 {
@@ -522,7 +546,8 @@ body {
     width: 100%; /* Fylder 100% af containerens bredde */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Position i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Margin omkring elementet */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -561,6 +586,8 @@ body {
     margin: 5px 5px 0px 5px; /* Margin omkring elementet */
     border-top-right-radius: 10px; /* Rundt hjørne på højre side */
     border-top-left-radius: 10px; /* Rundt hjørne på venstre side */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-photo-1 {
@@ -572,7 +599,8 @@ body {
     margin: 20px auto; /* Centrer elementet og tilføj afstand foroven */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Position i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Margin omkring elementet */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -609,6 +637,8 @@ body {
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
     border-top-right-radius: 10px; /* Rundt hjørne på højre side */
     border-top-left-radius: 10px; /* Rundt hjørne på venstre side */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-photo-2 {
@@ -620,7 +650,8 @@ body {
     margin: 20px auto; /* Centrer elementet og tilføj afstand foroven */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif;/* Hvid tekstfarve */
     position: relative; /* Position i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Margin omkring elementet */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -659,6 +690,8 @@ body {
     margin: 5px 5px 0px 5px; /* Afstand på 5px omkring overskriften */
     border-top-right-radius: 10px; /* Runding på øverste højre hjørne */
     border-top-left-radius: 10px; /* Runding på øverste venstre hjørne */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-redesign-1 {
@@ -669,7 +702,8 @@ body {
     width: 100%; /* Fylder hele containerens bredde */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Placering i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Juster margin */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -703,6 +737,8 @@ body {
     margin: 5px 5px 0px 5px; /* Afstand på 5px omkring overskriften */
     border-top-right-radius: 10px; /* Runding på øverste højre hjørne */
     border-top-left-radius: 10px; /* Runding på øverste venstre hjørne */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-redesign-2 {
@@ -714,7 +750,8 @@ body {
     margin: 20px auto; /* Centrerer elementet med afstand */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Placering i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Juster margin */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -750,6 +787,8 @@ body {
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
     border-top-right-radius: 10px; /* Runding på øverste højre hjørne */
     border-top-left-radius: 10px; /* Runding på øverste venstre hjørne */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-indesign-1 {
@@ -760,7 +799,8 @@ body {
     width: 100%; /* Fylder hele containerens bredde */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Placering i forhold til forælder */
     margin-left: auto; /* Ingen margin til venstre */
     margin: 0px 5px 0px 5px; /* Juster margin */
@@ -794,6 +834,8 @@ body {
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
     border-top-right-radius: 10px; /* Runding på øverste højre hjørne */
     border-top-left-radius: 10px; /* Runding på øverste venstre hjørne */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-indesign-2 {
@@ -805,7 +847,8 @@ body {
     margin: 20px auto; /* Centrerer elementet med afstand */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Placering i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Juster margin */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -848,6 +891,8 @@ body {
     margin: 5px 5px 0px 5px; /* Større afstand foroven */
     border-top-right-radius: 10px; /* Rundt hjørne øverst til højre */
     border-top-left-radius: 10px; /* Rundt hjørne øverst til venstre */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-prototyping-1 {
@@ -859,7 +904,8 @@ body {
     margin: 20px auto; /* Centrer og tilføj afstand foroven */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif;/* Hvid tekstfarve */
     position: relative; /* Placering i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Træk elementet tættere på forrige */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
@@ -900,6 +946,8 @@ body {
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
     border-top-right-radius: 10px; /* Rundt hjørne øverst til højre */
     border-top-left-radius: 10px; /* Rundt hjørne øverst til venstre */
+    font-family:'Times New Roman', Times, serif;
+    color:#0a1219;
 }
 
 .tekst-prototyping-2 {
@@ -911,7 +959,8 @@ body {
     margin: 20px auto; /* Centrer og tilføj afstand foroven */
     padding: 15px; /* Indre afstand */
     background-color: #516070; /* Mørk baggrundsfarve */
-    color: white; /* Hvid tekstfarve */
+    color:#d1d5d9;
+    font-family: "Noto Sans", sans-serif; /* Hvid tekstfarve */
     position: relative; /* Placering i forhold til forælder */
     margin: 0px 5px 0px 5px; /* Træk elementet tættere på forrige */
     transition: 0.3s ease-in-out; /* Glidende overgang ved ændringer */
