@@ -36,10 +36,11 @@ body {
     margin-bottom: 75px; /* Nederste margin */
     font-size: 50px; /* Sætter skriftstørrelsen */
     position: relative; /* Gør det muligt at placere pseudo-elementer */
+    border-bottom: 2px solid #a39182;
 }
 
 .Overskrift-Top::after {
-    content: ""; /* Opretter et pseudo-element for borderen */
+    border-bottom: 2px solid #a39182;
     display: block; /* Gør pseudo-elementet til en blok */
     width: calc(100% - 40px); /* Gør borderen lidt mindre end 100% */
     height: 2px; /* Sætter højden af borderen */
@@ -58,16 +59,17 @@ body {
     margin: 0px 0px 0px 0px; /* Sætter margin til nul */
     font-size: 50px; /* Sætter skriftstørrelsen */
     position: relative; /* Gør det muligt at placere pseudo-elementer */
+    border-bottom: 2px solid #a39182;
 }
 
 .Overskrift-Bund::after {
-    content: ""; /* Opretter et pseudo-element for borderen */
     display: block; /* Gør pseudo-elementet til en blok */
     width: calc(100% - 40px); /* Gør borderen lidt mindre end 100% */
     height: 2px; /* Sætter højden af borderen */
     background-color: #a39182; /* Sætter farven på borderen */
     position: 50% 50%; /* Indstiller positionen af borderen */
     margin: 0px 0px 0px 0px; /* Sætter margin til nul */
+    border-bottom: 2px solid #a39182;
 }
 
 .container {
@@ -302,6 +304,9 @@ body {
     margin: 0px 5px 0px 5px;
     transition: 0.3s ease-in-out;
     /* Glidende overgang ved ændringer */
+    text-align: justify;
+    /* Justér teksten til at strække sig over hele bredden */
+    line-height: 1.5;
 }
 
 .Billede-Forside-3 {
@@ -969,6 +974,7 @@ body {
     width: 100%; /* Gør containeren 100% af dens overordnede element */
     max-width: 450px; /* Begrænser bredden */
     margin: 0px auto; /* Centrer containeren */
+    margin-top: 30px;
 }
 
 .image-container img {
@@ -1023,7 +1029,7 @@ body {
 }
 
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-                                                    gooter
+                                                    footer
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 .footer {
     background-color: #516070; /* Mørk baggrund */
@@ -1034,6 +1040,7 @@ body {
     width: 100%; /* Sørg for at footeren dækker hele bredden */
     position: relative; /* Placering i forhold til skærmen */
     bottom: 0; /* Sæt footeren til bunden */
+    margin-top: 30px;
 }
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       responsiv
