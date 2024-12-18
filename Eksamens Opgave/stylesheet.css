@@ -108,7 +108,8 @@ body {
 
 
 
-.Overskrift-Forside-1 {
+/* Block: frontpage-header */
+.Forside-1__Overskrift {
     display: flex; 
     /* Brug flexbox til at arrangere indholdet */
     justify-content: flex-start;
@@ -133,11 +134,12 @@ body {
     /* Runde hjørner på øverste højre */
     border-top-left-radius: 10px;
     /* Runde hjørner på øverste venstre */
-    font-family:'Times New Roman', Times, serif;
-    color:#0a1219;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0a1219;
 }
 
-.tekst-Forside-1 {
+/* Block: frontpage-content */
+.Forside-1__Text {
     display: flex;
     /* Brug flexbox til at arrangere indholdet */
     flex-direction: column;
@@ -156,9 +158,8 @@ body {
     /* Indre afstand i tekstsektionen */
     background-color: #516070;
     /* Mørk baggrundsfarve */
-    color:#d1d5d9;
+    color: #d1d5d9;
     font-family: "Noto Sans", sans-serif;
-    /* Hvid tekstfarve */
     position: relative;
     /* Absolut positionering i forhold til forælderen */
     margin: 0px 5px 0px 5px;
@@ -169,11 +170,10 @@ body {
     /* Runde hjørner på nederste højre */
     border-bottom-left-radius: 10px;
     /* Runde hjørner på nederste venstre */
-    
-    
 }
 
-.Billede-Forside-1 {
+/* Block: frontpage-image */
+.Forside-Billede-2 {
     width: 100%;
     /* Fylder hele bredden af containeren */
     max-width: 450px;
@@ -190,11 +190,12 @@ body {
     /* Glidende overgang ved ændringer */
 }
 
+
 /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 
-.Overskrift-Forside-2 {
+.Forside-2__Overskrift {
     display: flex;
     justify-content: flex-start;
     /* Justér indholdet til venstre */
@@ -220,7 +221,7 @@ body {
 
 }
 
-.tekst-Forside-2 {
+.Forside-2__Text {
     display: flex;
     flex-direction: column;
     /* Læg tekstindholdet i en kolonne */
@@ -274,7 +275,7 @@ body {
                                                       3 afsnit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 
-.Overskrift-Forside-3 {
+.Forside-3__Overskrift{
     display: flex;
     justify-content: flex-start;
     /* Justér indholdet til venstre */
@@ -294,7 +295,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-Forside-3 {
+.Forside-3__Text {
     display: flex;
     flex-direction: column;
     /* Læg tekstindholdet i en kolonne */
@@ -343,7 +344,7 @@ body {
                                                       animation
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 
-.Overskrift-animation-1 {
+.animation-1__Overskrift {
     display: flex;
     /* Brug flexbox til at arrangere indholdet */
     justify-content: flex-start;
@@ -368,7 +369,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-animation-1 {
+.animation-1__Text {
     display: flex;
     flex-direction: column;
     /* Læg tekstindholdet i en kolonne */
@@ -418,7 +419,7 @@ body {
                                                      2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 
-.Overskrift-animation-2 {
+.animation-2__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -435,7 +436,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-animation-2 {
+.animation-2__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -472,7 +473,7 @@ body {
 
 /* Første afsnit - Video */
 
-.Overskrift-video-1 {
+.video-1__Overskrift{
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -489,7 +490,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-video-1 {
+.video-1__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -521,7 +522,7 @@ body {
                                                      2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 
-.Overskrift-video-2 {
+.video-2__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -538,7 +539,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-video-2 {
+.video-2__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -573,7 +574,7 @@ body {
 
 
 
-.Overskrift-photo-1 {
+.Photo-1__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -590,7 +591,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-photo-1 {
+.Photo-1__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -624,7 +625,7 @@ body {
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 
-.Overskrift-photo-2 {
+.Photo-2__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -641,7 +642,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-photo-2 {
+.Photo-2__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -677,7 +678,7 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       re-design
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-redesign-1 {
+.Redesign-1__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -694,7 +695,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-redesign-1 {
+.Redesign-1__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -724,7 +725,7 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-redesign-2 {
+.Redesign-2__Overskrift{
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -741,7 +742,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-redesign-2 {
+.Redesign-2__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -774,7 +775,7 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       in-design
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-indesign-1 {
+.indesign-1__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -791,7 +792,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-indesign-1 {
+.indesign-1__Text{
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -821,7 +822,7 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-indesign-2 {
+.indesign-2__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -838,7 +839,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-indesign-2 {
+.indesign-2__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -878,7 +879,7 @@ body {
 /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                        1 AFNSIT
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-prototyping-1 {
+.prototyping-1__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -895,7 +896,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-prototyping-1 {
+.prototyping-1__Text{
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
@@ -933,7 +934,7 @@ body {
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
 
-.Overskrift-prototyping-2 {
+.prototyping-2__Overskrift {
     display: flex; /* Brug flexbox til layout */
     justify-content: flex-start; /* Justér indholdet til venstre */
     align-items: flex-start; /* Justér indholdets lodrette position */
@@ -950,7 +951,7 @@ body {
     color:#0a1219;
 }
 
-.tekst-prototyping-2 {
+.prototyping-2__Text {
     display: flex; /* Brug flexbox til layout */
     flex-direction: column; /* Læg elementerne i en kolonne */
     justify-content: flex-start; /* Justér indholdet til toppen */
