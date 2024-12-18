@@ -68,7 +68,7 @@ body {
     font-family: "Roboto", sans-serif; /* Vælger skrifttype */
     height: 2px; /* Sætter højden af borderen */
     background-color: #a39182; /* Sætter farven på borderen */
-    position: 50% 50%; /* Indstiller positionen af borderen */
+
     margin: 0px 0px 0px 0px; /* Sætter margin til nul */
     border-bottom: 2px solid #a39182;
 }
@@ -173,7 +173,7 @@ body {
 }
 
 /* Block: frontpage-image */
-.Forside-Billede-2 {
+.Forside-Billede-1 {
     width: 100%;
     /* Fylder hele bredden af containeren */
     max-width: 450px;
@@ -1125,19 +1125,17 @@ body {
 ████████████████████████████████████████████████████████████████████████████████████████████████████████*/
  
 /* 1 AFSNIT */
-.Overskrift-Forside-1 {
+.Forside-1__Overskrift {
     width: 100%; /* Gør elementerne 100% brede på mindre skærme */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
-}
-
-.Overskrift-Forside-1 {
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     text-align: center; /* Centrerer teksten */
 }
 
-.tekst-Forside-1 {
+.Forside-1__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-Forside-1 {
@@ -1146,38 +1144,42 @@ body {
 }
 
 /* 2 AFSNIT */
-.tekst-Forside-2 {
+.Forside-2__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
-.Overskrift-Forside-2 {
+.Forside-2__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     text-align: center; /* Centrerer overskriften */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
 }
 
-.Billede-Forside-2 {
+.Billede-Forside-2{
     width: 100%; /* Gør billedet 100% bredt */
     margin: -10px 5px 0px 5px; /* Tilføjer margin til billedet */
     order: 2; /* Gør billedet til det andet element i rækkefølgen */
 }
 
 /* 3 AFSNIT */
-.Overskrift-Forside-3 {
+.Forside-3__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.Overskrift-Forside-3 {
+.Forside-3__Overskrift {
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     text-align: center; /* Centrerer overskriften */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
 }
 
-.tekst-Forside-3 {
+.Forside-3__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-Forside-3 {
@@ -1189,19 +1191,22 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       animation
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-animation-1 {
+.animation-1__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+   
 }
 
-.Overskrift-animation-1 {
+.animation-1__Overskrift {
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-animation-1 {
+.animation-1__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-animation-1 {
@@ -1213,12 +1218,13 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.tekst-animation-2 {
+.animation-2__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
-.Overskrift-animation-2 {
+.animation-2__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
@@ -1233,36 +1239,43 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                      video essentials
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-video-1 {
+.video-1__Overskrift {
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-video-1 {
+.video-1__Text {
     font-size: 16px; /* Mindre fontstørrelse til tekst */
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-video-1 {
     height: auto; /* Bevarer billedets proportioner */
     width: 100%; /* Gør billedet 100% bredt */
     margin: -10px 5px 0px 5px; /* Tilføjer margin til billedet */
-    order: 2; /* Gør billedet til det andet element i rækkefølgen */
+    order: 2;
+    
 }
 
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-video-2 {
+.video-2__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-video-2 {
+.video-2__Text{
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-video-2 {
@@ -1273,15 +1286,18 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                      photo essentials
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-photo-1 {
+.Photo-1__Overskrift {
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-photo-1 {
+.Photo-1__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-photo-1 {
@@ -1293,14 +1309,17 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-photo-2 {
+.Photo-2__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-photo-2 {
+.Photo-2__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-photo-2 {
@@ -1311,19 +1330,21 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       re-design
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-redesign-1 {
+.Redesign-1__Overskrift{
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    
 }
 
-.Overskrift-redesign-1 {
+.Redesign-1__Overskrift {
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-redesign-1 {
+.Redesign-1__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-redesign-1 {
@@ -1335,12 +1356,13 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.tekst-redesign-2 {
+.Redesign-2__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
-.Overskrift-redesign-2 {
+.Redesign-2__Overskrift {
     font-size: 30px; /* Mindre fontstørrelse på små skærme */
     text-align: center; /* Centrerer overskriften */
 }
@@ -1353,36 +1375,42 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                      in-design
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-indesign-1 {
+.indesign-1__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-indesign-1 {
+.indesign-1__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-indesign-1 {
     width: 100%; /* Gør billedet 100% bredt */
     margin: -10px 5px 0px 5px; /* Tilføjer margin til billedet */
-    order: 2; /* Gør billedet til det andet element i rækkefølgen */
+    
 }
 
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-indesign-2 {
+.indesign-2__Overskrift {
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-indesign-2 {
+.indesign-2__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
-.Billede-indesign-2 {
+.Billede-indesign-2{
     width: 100%; /* Gør billedet 100% bredt */
     margin: -10px 5px 0px 5px; /* Tilføjer margin til billedet */
 }
@@ -1390,14 +1418,17 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                 protyping
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-prototyping-1 {
+.prototyping-1__Overskrift{
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-prototyping-1 {
+.prototyping-1__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-prototyping-1 {
@@ -1409,14 +1440,17 @@ body {
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       2 afnsit
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
-.Overskrift-prototyping-2 {
+.prototyping-2__Overskrift{
     width: 100%; /* Gør overskriften 100% bredt */
     margin: 5px 5px 0px 5px; /* Tilføjer margin omkring overskriften */
+    font-size: 30px; /* Mindre fontstørrelse på små skærme */
+    text-align: center; /* Centrerer overskriften */
 }
 
-.tekst-prototyping-2 {
+.prototyping-1__Text {
     width: 100%; /* Gør tekstfeltet 100% bredt */
     margin: 0px 5px 0px 5px; /* Tilføjer margin omkring tekstfeltet */
+    font-size: 15px; /* Mindre fontstørrelse på små skærme */
 }
 
 .Billede-prototyping-2 {
@@ -1431,7 +1465,7 @@ body {
     display: block; /* Definerer layoutet som blok */
     width: 450px; /* Sætter en fast bredde */
     height: auto; /* Bevarer proportionerne */
-    margin: 5px 10px; /* Tilføjer margin omkring billederne */
+    margin: 0px auto; /* Tilføjer margin omkring billederne */
 }
 
 }
