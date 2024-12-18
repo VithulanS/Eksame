@@ -1391,6 +1391,7 @@ body {
 .Billede-indesign-1 {
     width: 100%; /* Gør billedet 100% bredt */
     margin: -10px 5px 0px 5px; /* Tilføjer margin til billedet */
+    order: 2;
     
 }
 
@@ -1413,6 +1414,7 @@ body {
 .Billede-indesign-2{
     width: 100%; /* Gør billedet 100% bredt */
     margin: -10px 5px 0px 5px; /* Tilføjer margin til billedet */
+    
 }
 
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
