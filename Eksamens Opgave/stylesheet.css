@@ -97,6 +97,40 @@ body {
     align-items: start; /* Justér indholdet til toppen */
 }
 
+.navbar {
+ 
+    padding: 0.5em 0;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    display: flex;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+  .menu a:hover {
+    background-color: #a39182; /* Mørkegrå baggrund */
+    color: #000000; /* Guld tekstfarve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtil skygge */
+    transform: scale(1.05); /* Lidt større på hover */
+  }
 
 /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                       FORSIDE
@@ -1077,6 +1111,50 @@ body {
     opacity: 1; /* Gør teksten synlig ved hover */
     transform: translateY(0); /* Returnerer teksten til sin oprindelige position */
 }
+ /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                                                    Kontakt mig
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████*/
+
+
+  
+  
+  
+  form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a39182;
+  }
+  .Text {
+    width: 100%;
+    /* Fylder hele bredden af containeren */
+    text-align: justify;
+    /* Justér teksten til at strække sig over hele bredden */
+    color: #d1d5d9;
+    font-family: "Noto Sans", sans-serif;
+    position: relative;
+    /* Absolut positionering i forhold til forælderen */
+   
+  
+}
+  
+  
 
  /*████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
                                                     footer
